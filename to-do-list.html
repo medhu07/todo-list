@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To do list</title>
+  <link rel="stylesheet" href="styles/todolist.css">
+</head>
+<body>
+  <p>To do list</p>
+  
+
+  <div class="todo-input-grid">
+        <input placeholder="To do list" class="js-name-input name-input">
+        <input type="date" class="js-date-input date-input">
+        <input type="time" class="js-time-input time-input">
+
+        <button class="js-add-button add-button" onclick=" 
+        
+        addToDo();
+        
+        
+        ">Add</button>
+  </div>
+  <h2 class="js-filter-title">📋 All Tasks</h2>
+<div style="margin-bottom: 10px;">
+  <button onclick="setFilter('all')">All</button>
+  <button onclick="setFilter('completed')">Completed</button>
+  <button onclick="setFilter('pending')">Pending</button>
+</div>
+<div class="js-todo-list todo-grid"></div>
+
+  <script src="scripts/to-do-list.js"></script>
+</body>
+</html>
